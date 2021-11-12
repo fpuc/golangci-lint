@@ -6,8 +6,8 @@ import (
 	"html/template"
 	"strings"
 
-	"github.com/golangci/golangci-lint/pkg/logutils"
-	"github.com/golangci/golangci-lint/pkg/result"
+	"github.com/fpuc/golangci-lint/pkg/logutils"
+	"github.com/fpuc/golangci-lint/pkg/result"
 )
 
 const templateContent = `<!doctype html>

@@ -1,11 +1,11 @@
 //args: -Egci
-//config: linters-settings.gci.local-prefixes=github.com/golangci/golangci-lint
+//config: linters-settings.gci.local-prefixes=github.com/fpuc/golangci-lint
 package gci
 
 import (
 	"fmt"
 
-	"github.com/golangci/golangci-lint/pkg/config"
+	"github.com/fpuc/golangci-lint/pkg/config"
 
 	"github.com/pkg/errors"
 )

@@ -8,12 +8,12 @@ import (
 	"github.com/spf13/viper"
 	"golang.org/x/tools/go/analysis"
 
-	"github.com/golangci/golangci-lint/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/golinters"
-	"github.com/golangci/golangci-lint/pkg/golinters/goanalysis"
-	"github.com/golangci/golangci-lint/pkg/lint/linter"
-	"github.com/golangci/golangci-lint/pkg/logutils"
-	"github.com/golangci/golangci-lint/pkg/report"
+	"github.com/fpuc/golangci-lint/pkg/config"
+	"github.com/fpuc/golangci-lint/pkg/golinters"
+	"github.com/fpuc/golangci-lint/pkg/golinters/goanalysis"
+	"github.com/fpuc/golangci-lint/pkg/lint/linter"
+	"github.com/fpuc/golangci-lint/pkg/logutils"
+	"github.com/fpuc/golangci-lint/pkg/report"
 )
 
 type Manager struct {
@@ -546,12 +546,16 @@ func (m Manager) GetAllSupportedLinterConfigs() []*linter.Config {
 			WithSince("1.43.0").
 			WithPresets(linter.PresetBugs).
 			WithURL("https://github.com/breml/bidichk"),
+		linter.NewConfig(golinters.NewGostatement()).
+			WithSince("1.43.0").
+			WithPresets(linter.PresetBugs).
+			WithURL("https://github.com/fpuc/gostatement"),
 
 		// nolintlint must be last because it looks at the results of all the previous linters for unused nolint directives
 		linter.NewConfig(golinters.NewNoLintLint()).
 			WithSince("v1.26.0").
 			WithPresets(linter.PresetStyle).
-			WithURL("https://github.com/golangci/golangci-lint/blob/master/pkg/golinters/nolintlint/README.md"),
+			WithURL("https://github.com/fpuc/golangci-lint/blob/master/pkg/golinters/nolintlint/README.md"),
 	}
 
 	enabledByDefault := map[string]bool{

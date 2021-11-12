@@ -1,4 +1,4 @@
-module github.com/golangci/golangci-lint
+module github.com/fpuc/golangci-lint
 
 go 1.16
 
@@ -22,6 +22,7 @@ require (
 	github.com/denis-tingajkin/go-header v0.4.2
 	github.com/esimonov/ifshort v1.0.3
 	github.com/fatih/color v1.13.0
+	github.com/fpuc/gostatement v1.0.0
 	github.com/fzipp/gocyclo v0.3.1
 	github.com/go-critic/go-critic v0.6.1
 	github.com/go-xmlfmt/xmlfmt v0.0.0-20191208150333-d5b6f63a941b
@@ -30,6 +31,7 @@ require (
 	github.com/golangci/dupl v0.0.0-20180902072040-3e9179ac440a
 	github.com/golangci/go-misc v0.0.0-20180628070357-927a3d87b613
 	github.com/golangci/gofmt v0.0.0-20190930125516-244bba706f1a
+	github.com/golangci/golangci-lint v1.43.0 // indirect
 	github.com/golangci/lint-1 v0.0.0-20191013205115-297bf364a8e0
 	github.com/golangci/maligned v0.0.0-20180506175553-b1d89398deca
 	github.com/golangci/misspell v0.3.5

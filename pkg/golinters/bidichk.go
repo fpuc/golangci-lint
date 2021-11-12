@@ -4,7 +4,7 @@ import (
 	"github.com/breml/bidichk/pkg/bidichk"
 	"golang.org/x/tools/go/analysis"
 
-	"github.com/golangci/golangci-lint/pkg/golinters/goanalysis"
+	"github.com/fpuc/golangci-lint/pkg/golinters/goanalysis"
 )
 
 func NewBiDiChkFuncName() *goanalysis.Linter {

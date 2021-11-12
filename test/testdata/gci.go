@@ -4,7 +4,7 @@ package testdata
 import (
 	"fmt"
 
-	"github.com/golangci/golangci-lint/pkg/config"
+	"github.com/fpuc/golangci-lint/pkg/config"
 	"github.com/pkg/errors"
 )
 
