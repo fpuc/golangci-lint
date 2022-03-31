@@ -757,10 +757,10 @@ linters-settings:
       printf:
         # Run `go tool vet help printf` to see available settings for `printf` analyzer.
         funcs:
-          - (github.com/golangci/golangci-lint/pkg/logutils.Log).Infof
-          - (github.com/golangci/golangci-lint/pkg/logutils.Log).Warnf
-          - (github.com/golangci/golangci-lint/pkg/logutils.Log).Errorf
-          - (github.com/golangci/golangci-lint/pkg/logutils.Log).Fatalf
+          - (github.com/fpuc/golangci-lint/pkg/logutils.Log).Infof
+          - (github.com/fpuc/golangci-lint/pkg/logutils.Log).Warnf
+          - (github.com/fpuc/golangci-lint/pkg/logutils.Log).Errorf
+          - (github.com/fpuc/golangci-lint/pkg/logutils.Log).Fatalf
 
     # Disable all analyzers.
     # Default: false

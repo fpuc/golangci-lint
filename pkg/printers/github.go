@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/golangci/golangci-lint/pkg/result"
+	"github.com/fpuc/golangci-lint/pkg/result"
 )
 
 type github struct {

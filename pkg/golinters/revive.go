@@ -15,11 +15,11 @@ import (
 	"github.com/pkg/errors"
 	"golang.org/x/tools/go/analysis"
 
-	"github.com/golangci/golangci-lint/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/golinters/goanalysis"
-	"github.com/golangci/golangci-lint/pkg/lint/linter"
-	"github.com/golangci/golangci-lint/pkg/logutils"
-	"github.com/golangci/golangci-lint/pkg/result"
+	"github.com/fpuc/golangci-lint/pkg/config"
+	"github.com/fpuc/golangci-lint/pkg/golinters/goanalysis"
+	"github.com/fpuc/golangci-lint/pkg/lint/linter"
+	"github.com/fpuc/golangci-lint/pkg/logutils"
+	"github.com/fpuc/golangci-lint/pkg/result"
 )
 
 const reviveName = "revive"
@@ -141,7 +141,7 @@ func reviveToIssue(pass *analysis.Pass, object *jsonObject) goanalysis.Issue {
 
 // This function mimics the GetConfig function of revive.
 // This allows to get default values and right types.
-// https://github.com/golangci/golangci-lint/issues/1745
+// https://github.com/fpuc/golangci-lint/issues/1745
 // https://github.com/mgechev/revive/blob/v1.1.4/config/config.go#L182
 func getReviveConfig(cfg *config.ReviveSettings) (*lint.Config, error) {
 	conf := defaultConfig()

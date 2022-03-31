@@ -7,9 +7,9 @@ import (
 	gci "github.com/daixiang0/gci/pkg/analyzer"
 	"golang.org/x/tools/go/analysis"
 
-	"github.com/golangci/golangci-lint/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/golinters/goanalysis"
-	"github.com/golangci/golangci-lint/pkg/lint/linter"
+	"github.com/fpuc/golangci-lint/pkg/config"
+	"github.com/fpuc/golangci-lint/pkg/golinters/goanalysis"
+	"github.com/fpuc/golangci-lint/pkg/lint/linter"
 )
 
 const gciName = "gci"

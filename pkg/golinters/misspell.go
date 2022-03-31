@@ -9,9 +9,9 @@ import (
 	"github.com/golangci/misspell"
 	"golang.org/x/tools/go/analysis"
 
-	"github.com/golangci/golangci-lint/pkg/golinters/goanalysis"
-	"github.com/golangci/golangci-lint/pkg/lint/linter"
-	"github.com/golangci/golangci-lint/pkg/result"
+	"github.com/fpuc/golangci-lint/pkg/golinters/goanalysis"
+	"github.com/fpuc/golangci-lint/pkg/lint/linter"
+	"github.com/fpuc/golangci-lint/pkg/result"
 )
 
 func runMisspellOnFile(fileName string, r *misspell.Replacer, lintCtx *linter.Context) ([]result.Issue, error) {

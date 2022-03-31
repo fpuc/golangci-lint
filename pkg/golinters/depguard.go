@@ -9,10 +9,10 @@ import (
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/loader" //nolint:staticcheck // require changes in github.com/OpenPeeDeeP/depguard
 
-	"github.com/golangci/golangci-lint/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/golinters/goanalysis"
-	"github.com/golangci/golangci-lint/pkg/lint/linter"
-	"github.com/golangci/golangci-lint/pkg/result"
+	"github.com/fpuc/golangci-lint/pkg/config"
+	"github.com/fpuc/golangci-lint/pkg/golinters/goanalysis"
+	"github.com/fpuc/golangci-lint/pkg/lint/linter"
+	"github.com/fpuc/golangci-lint/pkg/result"
 )
 
 const depguardLinterName = "depguard"

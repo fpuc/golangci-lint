@@ -31,7 +31,7 @@ linters-settings:
   gocyclo:
     min-complexity: 15
   goimports:
-    local-prefixes: github.com/golangci/golangci-lint
+    local-prefixes: github.com/fpuc/golangci-lint
   gomnd:
     # TODO(ldez) must be rewritten after the v1.44.0 release.
     settings:
@@ -46,10 +46,10 @@ linters-settings:
     settings:
       printf:
         funcs:
-          - (github.com/golangci/golangci-lint/pkg/logutils.Log).Infof
-          - (github.com/golangci/golangci-lint/pkg/logutils.Log).Warnf
-          - (github.com/golangci/golangci-lint/pkg/logutils.Log).Errorf
-          - (github.com/golangci/golangci-lint/pkg/logutils.Log).Fatalf
+          - (github.com/fpuc/golangci-lint/pkg/logutils.Log).Infof
+          - (github.com/fpuc/golangci-lint/pkg/logutils.Log).Warnf
+          - (github.com/fpuc/golangci-lint/pkg/logutils.Log).Errorf
+          - (github.com/fpuc/golangci-lint/pkg/logutils.Log).Fatalf
   lll:
     line-length: 140
   misspell:
