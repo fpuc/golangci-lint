@@ -4,7 +4,7 @@ import (
 	"github.com/sylvia7788/contextcheck"
 	"golang.org/x/tools/go/analysis"
 
-	"github.com/golangci/golangci-lint/pkg/golinters/goanalysis"
+	"github.com/fpuc/golangci-lint/pkg/golinters/goanalysis"
 )
 
 func NewContextCheck() *goanalysis.Linter {

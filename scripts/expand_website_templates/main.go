@@ -19,10 +19,10 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/golangci/golangci-lint/internal/renameio"
-	"github.com/golangci/golangci-lint/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/lint/linter"
-	"github.com/golangci/golangci-lint/pkg/lint/lintersdb"
+	"github.com/fpuc/golangci-lint/internal/renameio"
+	"github.com/fpuc/golangci-lint/pkg/config"
+	"github.com/fpuc/golangci-lint/pkg/lint/linter"
+	"github.com/fpuc/golangci-lint/pkg/lint/lintersdb"
 )
 
 const listItemPrefix = "list-item-"

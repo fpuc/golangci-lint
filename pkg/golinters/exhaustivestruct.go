@@ -6,8 +6,8 @@ import (
 	"github.com/mbilski/exhaustivestruct/pkg/analyzer"
 	"golang.org/x/tools/go/analysis"
 
-	"github.com/golangci/golangci-lint/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/golinters/goanalysis"
+	"github.com/fpuc/golangci-lint/pkg/config"
+	"github.com/fpuc/golangci-lint/pkg/golinters/goanalysis"
 )
 
 func NewExhaustiveStruct(settings *config.ExhaustiveStructSettings) *goanalysis.Linter {
